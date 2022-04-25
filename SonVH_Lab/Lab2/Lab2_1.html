@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SonVH</title>
+        <link rel="stylesheet" href="Lab2_1.css">
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form action="Lab2_1_preview.php" method="POST">
+            <div class="header">
+                <span class="personal-details">
+                    <h1>Personal Details</h1>
+                    <p class="say-hi">Hi all!</p>
+                    <textarea class="textarea" name="intro" id="tex" cols="30" rows="3" placeholder="Introduction" maxlength=""></textarea>
+                </span>  
+                <div class="upload-img">
+                    <img id="output_image" class="img" src="avatar.jpeg" width="100%" height="100%"/>
+                    <input type="file" name="img" id="img-upload" accept="image/*" onchange="preview_image(event)">
+                </div>
+            </div>    
+
+            <hr>
+            <div class="resume-content">
+                <div class="info name">
+                    <p class="title">Name</p>
+                    <div class="content">
+                        <input type="text" name="name" id="name" placeholder="Your name">
+                    </div>              
+                </div>
+                
+                <div class="info name">
+                    <p class="title">Date of birth</p>
+                    <div class="content">
+                        <input type="date" name="dob" id="name">
+                    </div>              
+                </div>
+                <div class="info education-process">
+                    <p class="title">Education Process</p>
+                    <div class="content">
+                        <textarea class="textarea" name="education-process" id="tex" cols="30" rows="1" placeholder="Education proccess"></textarea>
+                    </div>              
+                </div>
+                <div class="info working-process">
+                    <p class="title">Working Process</p>
+                    <div class="content">
+                        <textarea class="textarea" name="working-process" id="tex" cols="30" rows="1" placeholder="Working proccess"></textarea>
+                    </div>              
+                </div>
+                <div class="info social-activities">
+                    <p class="title">Social Activities</p>
+                    <div class="content">
+                        <textarea class="textarea" name="social-activities" id="tex" cols="30" rows="1" placeholder="Social activities"></textarea>
+                    </div>              
+                </div>
+                <div class="info skill">
+                    <p class="title">Skill</p>
+                    <div class="content">
+                        <textarea class="textarea" name="skills" id="tex" cols="30" rows="1" placeholder="Skills"></textarea>
+                    </div>              
+                </div>
+                <div class="info experiences">
+                    <p class="title">Experiences</p>
+                    <div class="content">
+                        <textarea class="textarea" name="experiences" id="tex" cols="30" rows="1" placeholder="Experiences"></textarea>
+                    </div>              
+                </div>
+                <div class="info Certifications">
+                    <p class="title">Certifications</p>
+                    <div class="content">
+                        <textarea class="textarea" name="certifications" id="tex" cols="30" rows="1" placeholder="Certifications"></textarea>
+                    </div>              
+                </div>
+                <div class="info hobbies">
+                    <p class="title">Hobbies</p>
+                    <div class="content">
+                        <input type="checkbox" id="hobby1" name="hobbies[]" value="Travel">
+                        <label for="hobby1">Travel</label><br>
+                        <input type="checkbox" id="hobby2" name="hobbies[]" value="Music">
+                        <label for="hobby2">Music</label><br>
+                    </div>              
+                </div>
+                <div class="info desire">
+                    <p class="title">Desire</p>
+                    <div class="content">
+                        <textarea class="textarea" name="desire" id="tex" cols="30" rows="1" placeholder="Your desire"></textarea>
+                    </div>              
+                </div>          
+            </div>  
+            <input type="submit" id="save-btn" name="save-btn" value="Save">
+        </form>
+    </body>
+
+</html>

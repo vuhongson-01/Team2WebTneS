@@ -12,14 +12,12 @@
 /* .menu-title's property in index.css */
 
 .take-information{
-    /* width: 100%; */
-    /* height: fit-content; */
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #4E2816;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction:column;
+    align-items: center;
 }
 
 .location{

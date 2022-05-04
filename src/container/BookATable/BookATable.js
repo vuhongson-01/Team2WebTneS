@@ -5,8 +5,9 @@ import './BookATable.css';
 const BookATable = () => (
     <div className="book-a-table" id="book-a-table">
         <div className="img">
-            <div className="hsub0"></div>
-            <h1 className="menu-title">Book A Table</h1>
+            <div className="hsub0">
+                <h1 className="menu-title">Book A Table</h1>
+            </div> 
         </div>
         <div className="take-information">
             <div className="location">

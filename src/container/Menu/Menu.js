@@ -27,8 +27,9 @@ const MenuOption = () => (
 const Menu = () => (
     <div className="menu" id="menu">
         <div className="img">
-            <div className="hsub0"></div>
-            <h1 className="menu-title">Menu</h1>
+            <div className="hsub0">
+                <h1 className="menu-title">Menu</h1>
+            </div>
         </div>
         <div className="menu-option">
             <h2 className="menu-sub-title">On the menu</h2>

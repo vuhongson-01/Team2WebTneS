@@ -6,7 +6,7 @@ import BookATable from "./container/BookATable/BookATable";
 import ContactUs from "./container/FindUs/ContactUs";
 // import Footer from "./container/Footer/Footer";
 import Navbar from './components/Navbar/Navbar';
-import TempHeader from './container/TempHeader/TempHeader';
+// import TempHeader from './container/TempHeader/TempHeader';
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <div>
             <Navbar />
             <Header />
-            <TempHeader />
+            {/* <TempHeader /> */}
             <AboutUs />
             <Menu />
             <BookATable />

@@ -1,13 +1,31 @@
 import React from "react";
 import './Header.css';
+import img from '../../assets/temp-header.jpg';
 
 const Header = () => (
-    <div className="header">
-        <div className="hsub0"></div>
-        <div className="hsub1">
-            <a className="logo" href="./"><i class="fa-solid fa-utensils"></i><span className="nhoam-logo">Nhoàm</span></a>
-            <br></br>
-            <span className="slogan">ĐƯA TINH HOA ẨM THỰC VIỆT VƯƠN RA THẾ GIỚI</span>
+    <div className="header" on>
+        <div className="main-header">
+            <div className="hsub0">
+                <div className="hsub1">
+                    <div>
+                        <a className="logo" href="./"><i class="fa-solid fa-utensils"></i><span className="nhoam-logo">Nhoàm</span></a>
+                    </div>
+                    <div>
+                        <span className="slogan">ĐƯA TINH HOA ẨM THỰC VIỆT VƯƠN RA THẾ GIỚI</span>      
+                    </div>        
+                </div>
+            </div>            
+        </div>
+
+        <div className="temp-header">
+            <div className="temp-header-container">
+                <img src={img} className="temp-header-img"></img>
+                <span className="quote">
+                    <span className="b">ẨM THỰC</span><br></br>
+                    <span className="w">VIỆT NAM</span><br></br>
+                    <span className="w">ĐƯƠNG ĐẠI</span><br></br>
+                </span>                
+            </div>
         </div>
     </div>
 );

@@ -8,9 +8,9 @@ import tripicon from '../../assets/tripadvisor.svg';
 const ContactUs = () => (
     <div className="contact-boundary" id="contact-us">
         <div className="social-media-icon">
-            <a href="www.facebook.com"><img src={fbicon} height="60px"></img></a>
-            <a href="www.instagram.com"><img src={insicon} height="60px"></img></a>
-            <a href="www.tripadvisor.com"><img src={tripicon} height="60px"></img></a>
+            <a href="www.facebook.com"><img src={fbicon} height="50px"></img></a>
+            <a href="www.instagram.com"><img src={insicon} height="50px"></img></a>
+            <a href="www.tripadvisor.com"><img src={tripicon} height="50px"></img></a>
         </div>
         <div className="official-information">
             <i>

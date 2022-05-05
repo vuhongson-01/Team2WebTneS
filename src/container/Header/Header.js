@@ -3,14 +3,14 @@ import './Header.css';
 import img from '../../assets/temp-header.jpg';
 
 const Header = () => (
-    <div className="header" on>
+    <div className="header" id="home">
         <div className="main-header">
             <div className="hsub0">
                 <div className="hsub1">
-                    <div>
+                    <div className="__logo">
                         <a className="logo" href="./"><i class="fa-solid fa-utensils"></i><span className="nhoam-logo">Nhoàm</span></a>
                     </div>
-                    <div>
+                    <div className="slogan-content">
                         <span className="slogan">ĐƯA TINH HOA ẨM THỰC VIỆT VƯƠN RA THẾ GIỚI</span>      
                     </div>        
                 </div>

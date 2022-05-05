@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: bottom;
     width: 100vw;
-    height: 50vw;
+    height: var(--height-size);
 }
 /* .hsub0's property in index.css */
 /* .menu-title's property in index.css */
@@ -21,61 +21,60 @@
 }
 
 .location{
-    width: 1000px; 
+    width: 80%; 
     padding-bottom: 50px;
 }
 .location span{
-    color: #FFFBFF;
-    font-size: 40px;
+    color: var(--font-color-1);
+    font-size: var(--font-size-content-large);
     font-family: 'Noto Serif Display', serif;
     font-weight: 400;
 }
 
 .open-close-time .h2{
-    font-size: 24px;
+    font-size: var(--font-size-content-medium);
     text-transform: uppercase;
-    color: #FFFBFF;
+    color: var(--font-color-1);
     line-height: 50px;
     font-weight: 400;
 }
 
 .open-close-time .h3{
-    font-size: 24px;
-    color:#F1DABF;
+    font-size: var(--font-size-content-small);
+    color:var(--font-color-2);
     font-weight: 400;
 }
 
-
 .fa-location-dot{
-    color: #F1DABF;
+    color: var(--font-color-2);
 }
 
 .book-a-table-content{
-    width: 1000px;
+    width: 80%;
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
 .form{
-    width: 460px;
+    width: 80%;
     text-align: right;
     justify-self:right;
 }
 .form .h1{
-    font-size: 50px;
-    color:#F1DABF;
+    font-size: var(--font-size-content-large);
+    color: var(--font-color-2);
     font-weight: 400;
     line-height: 60px;
 }
 .form .h3, .guest-number{
-    font-size: 20px;
-    color:#FFFBFF;
+    font-size: var(--font-size-content-small);
+    color:var(--font-color-1);
     font-weight: 400;
 }
 form{
     width: 100%;
 }
 .open-close-time{
-    border-right: 1px solid #F1DABF;
+    border-right: 1px solid var(--font-color-2);;
 }
 
 input, textarea{
@@ -83,7 +82,7 @@ input, textarea{
     flex-direction: column;
     resize: none;
     width: 100%;
-    font-size: 14px;
+    font-size: var(--font-size-content-mini);
     float: right;
     padding: 10px;
     margin-bottom: 10px;
@@ -100,14 +99,83 @@ input[type="number"]{
 }
 
 input[type="submit"]{
-    width: 200px;
-    height: 45px;
     text-transform: uppercase;
     background: none;
     cursor: pointer;
-    border: 1px solid #F1DABF;
-    color: #F1DABF;
+    border: 1px solid var(--font-color-2);;
+    color: var(--font-color-2);;
     align-items: center;
-    font-size: 20px;
+    font-size: var(--font-size-content-medium);
     font-family: 'Noto Serif Display', serif;
+}
+
+@media (max-width: 1690px){
+    .take-information{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+}
+
+@media (max-width: 1124px){
+    .take-information{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width: 768px){
+    .take-information{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .open-close-time .h2{
+        line-height: 24px;
+    }
+    .form .h1{
+        line-height: 16px;
+    }
+    input, textarea{
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+    .guest-number{
+        line-height: 24px;
+    }
+    .location{
+        width: 80%; 
+        padding-bottom: 36px;
+    }
+}
+@media (max-width: 600px){
+    .take-information{
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    .open-close-time .h2{
+        line-height: 10px;
+    }
+
+    input, textarea{
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+    .guest-number{
+        line-height: 24px;
+    }
+    .location{
+        width: 80%; 
+        padding-bottom: 20px;
+    }
+    .book-a-table-content{
+        display: block;
+    }
+    .open-close-time{
+        border-right: none;
+        border-bottom: 1px solid var(--font-color-2);;
+    }
+
+    .form{
+        float: right;
+    }
 }

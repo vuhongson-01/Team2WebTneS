@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="" onmouseover="mouseOver('red')" onmouseout="mouseOut(this)">RED</a>
+        <a href="" onmouseover="mouseOver('green')" onmouseout="mouseOut(this)">GREEN</a>
+        <a href="" onmouseover="mouseOver('blue')" onmouseout="mouseOut(this)">BLUE</a>
+    </header>
+    <p id="para">I'm Hoang, your sugar Daddy</p>
+</body>
+<script>
+function mouseOver(color){
+    document.querySelector('p').style.color = color
+}
+
+function mouseOut(){
+    document.querySelector('p').style.color = "black"
+}
+</script>
+</html>

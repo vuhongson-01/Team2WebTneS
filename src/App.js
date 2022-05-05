@@ -6,7 +6,7 @@ import BookATable from "./container/BookATable/BookATable";
 import ContactUs from "./container/ContactUs/ContactUs";
 import MoveTop from "./components/MoveTop/MoveTop";
 import Navbar from './components/Navbar/Navbar';
-import LanguageTranslate from "./components/LanguageTranslate/LanguageTranslate";
+import LanguageTranslate from "./components/ChangeLanguage/ChangeLanguage";
 import './App.css';
 
 function App() {

@@ -12,24 +12,25 @@
     <div class="fill-box">
         <h2 class="active">Form</h2>
         <hr>
-        <form name='f' th:action="">
-            <span style="display: block">username</span>
-            <input type="text" class="text" required name = "userId">
+        <form name='f' th:action="" >
+            <span>username</span>
+            <input type="text" required id = "userId" />
             <br>
             <br>
-            <span style="display:block">email</span>
-            <input type="text" class="text" required name="email">
+            <span>email</span>
+            <input type="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="The domain portion of the email address is invalid (the portion after the @)." required id="email">
             <br>
             <br>
-            <span style="display: block">phone number</span>
-            <input type="text" class="text" required name="phone_number" />
+            <span>phone number</span>
+            <input type="text" pattern="(\+84|0)\d{9,10}" required id="phone_number" />
             <hr>
-            <input type="submit" value="Submit">
+            <div>
+                <input type="submit" value="Submit" >
+            </div>
+            
         </form >
         
     </div>
 </body>
-<script>
-
-</script>
+<script src="./main.js"></script>
 </html>

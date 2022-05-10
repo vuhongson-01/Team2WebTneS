@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="loadLeftFrame()">
     <form action="" onsubmit="addBlog()">
         <input type="url" id="blogUrl" placeholder="Enter your favorite blog url">
         <br>
@@ -24,8 +24,8 @@ function setCookie(url,exdays) {
     document.cookie = "url" + "=" + url + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
+function getCookie(url) {
+  let name = url + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
   let ca = decodedCookie.split(';');
   for(let i = 0; i < ca.length; i++) {
@@ -41,8 +41,28 @@ function getCookie(cname) {
 }
 
 function addBlog() {
-    var blogUrl = document.getElementById("blogUrl").value;
-    setCookie(blogUrl,1);
+
+  var blogUrl = document.getElementById("blogUrl").value;
+  setCookie(blogUrl,1); 
+  
+  if (blogUrl != "") {
+    var element = parent.leftframe.document.querySelector("a");
+    // console.log(element);
+    // element = document.createElement("a");
+    element.href = blogUrl;
+    element.innerHTML = blogUrl;
+  }
+}
+
+function loadLeftFrame() {
+  var url = getCookie("url");
+  console.log(1)
+  console.log(url);
+  var leftElement = parent.leftframe.document.querySelector("a");
+  if (url != "") {
+    leftElement.href = url;
+    leftElement.innerHTML = url;
+  }
 }
 </script>
 </html>

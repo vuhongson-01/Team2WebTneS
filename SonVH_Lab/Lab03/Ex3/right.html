@@ -45,23 +45,23 @@ function addBlog() {
   var blogUrl = document.getElementById("blogUrl").value;
   setCookie(blogUrl,1); 
   
-  if (blogUrl != "") {
-    var element = parent.leftframe.document.querySelector("a");
-    // console.log(element);
-    // element = document.createElement("a");
-    element.href = blogUrl;
-    element.innerHTML = blogUrl;
-  }
+  // if (blogUrl != "") {
+  //   element = document.createElement("a");
+  //   element.href = blogUrl;
+  //   element.innerHTML = blogUrl;
+  //   parent.leftframe.document.body.appendChild(element);
+  // }
 }
 
 function loadLeftFrame() {
   var url = getCookie("url");
-  console.log(1)
-  console.log(url);
-  var leftElement = parent.leftframe.document.querySelector("a");
+  // console.log(url);
   if (url != "") {
-    leftElement.href = url;
-    leftElement.innerHTML = url;
+    element = document.createElement("a");
+    element.style.display = "block";
+    element.href = url;
+    element.innerHTML = url;
+    parent.leftframe.document.body.appendChild(element);
   }
 }
 </script>

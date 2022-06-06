@@ -1,0 +1,105 @@
+.tag{
+    margin-top: 30px;
+    width: 200px;
+}
+
+.use-for {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.use-for a{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.use-for a:hover{
+    color: rgb(230, 136, 82);
+}
+
+.category{
+    padding: 10px;
+    border-bottom: 1px dashed black;
+}
+#men{
+    border-left: 1px solid rgb(177, 177, 177);
+    border-right: 1px solid rgb(177, 177, 177);
+}
+
+.tag-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #e68852;
+    cursor: pointer;
+}
+
+.pick{
+    /* display: block; */
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.option-checkbox{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-checkbox:hover{
+    background-color: #b6b6b6;
+    border-radius: 5px;
+}
+
+.active-attribute{
+    background-color: rgb(182, 182, 182);
+}
+.active-attribute .fa-xmark{
+    visibility: visible;
+}
+
+.fa-xmark{
+    cursor: pointer;
+    margin-right: 10px;
+    visibility: hidden;
+}
+.size td{
+    border: 1px solid gray;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.size td a{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.size td a:hover{
+    border-radius: 0px;
+}
+
+.color td{
+    width: 20px;
+    height: 20px;
+}
+
+.color td a:hover{
+    display: none;
+}

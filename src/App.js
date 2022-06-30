@@ -7,19 +7,21 @@ import ContactUs from "./container/ContactUs/ContactUs";
 import MoveTop from "./components/MoveTop/MoveTop";
 import Navbar from './components/Navbar/Navbar';
 import LanguageTranslate from "./components/ChangeLanguage/ChangeLanguage";
+import LoginForm from "./components/LoginForm/LoginForm";
 import './App.css';
 
 function App() {
     return(
         <div>
-            <LanguageTranslate />
+            <LoginForm/>
+            {/* <LanguageTranslate />
             <MoveTop />
             <Navbar />
             <Header />
             <AboutUs />
             <Menu />
             <BookATable />
-            <ContactUs />
+            <ContactUs /> */}
         </div>
     )   
 }

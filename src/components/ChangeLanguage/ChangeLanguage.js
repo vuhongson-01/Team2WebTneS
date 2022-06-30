@@ -4,8 +4,8 @@ import './ChangeLanguage.css';
 
 
 function changeLanguage(lang) {
-    if (lang == "vi");
-    if (lang == "en");
+    if (lang === "vi");
+    if (lang === "en");
 }
 const ChangeLanguage = () => (
     <div className="translate-btn">

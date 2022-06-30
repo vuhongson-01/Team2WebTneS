@@ -1,8 +1,8 @@
 import React from "react";
 import './Header.css';
-import img from '../../assets/temp-header.jpg';
+import img from '../../assets/temp-header.png';
 
-const Header = () => (
+const Header = (lang) => (
     <div className="header" id="home">
         <div className="main-header">
             <div className="hsub0">

@@ -5,6 +5,7 @@
     background-image: url('../../assets/book-a-table-img.jpg');
     background-size: cover;
     background-position: bottom;
+    box-shadow: inset 0px 0px 0px 50px #4E2816;
     width: 100vw;
     height: var(--height-size);
 }
@@ -20,6 +21,16 @@
     align-items: center;
 }
 
+.sub-menu-title{
+    color: var(--font-color-2);
+    font-size: var(--font-size-sub-title);
+    font-weight: 400;
+    letter-spacing: 15px;
+    margin: 0;
+    padding-bottom: 120px;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+}
 .location{
     width: 80%; 
     padding-bottom: 50px;
@@ -27,8 +38,11 @@
 .location span{
     color: var(--font-color-1);
     font-size: var(--font-size-content-large);
-    font-family: 'Noto Serif Display', serif;
+    font-family: var(--font-family);
     font-weight: 400;
+}
+.open-close-time{
+    font-family: var(--font-family);
 }
 
 .open-close-time .h2{
@@ -43,6 +57,7 @@
     font-size: var(--font-size-content-small);
     color:var(--font-color-2);
     font-weight: 400;
+
 }
 
 .fa-location-dot{
@@ -58,6 +73,7 @@
     width: 80%;
     text-align: right;
     justify-self:right;
+    font-family: var(--font-family);
 }
 .form .h1{
     font-size: var(--font-size-content-large);
@@ -86,7 +102,6 @@ input, textarea{
     float: right;
     padding: 10px;
     margin-bottom: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .guest-number{
@@ -106,7 +121,7 @@ input[type="submit"]{
     color: var(--font-color-2);;
     align-items: center;
     font-size: var(--font-size-content-medium);
-    font-family: 'Noto Serif Display', serif;
+    font-family: var(--font-family);
 }
 
 @media (max-width: 1690px){

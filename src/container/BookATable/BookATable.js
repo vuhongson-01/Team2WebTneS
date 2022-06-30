@@ -2,14 +2,12 @@ import React from "react";
 
 import './BookATable.css';
 
-const BookATable = () => (
+const BookATable = (lang) => (
     <div className="book-a-table" id="book-a-table">
         <div className="img">
-            <div className="hsub0">
-                <h1 className="menu-title">Book A Table</h1>
-            </div> 
         </div>
         <div className="take-information">
+            <h2 className="sub-menu-title">Book A Table</h2>
             <div className="location">
                 <span><i class="fa-solid fa-location-dot"></i> 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</span>
             </div>

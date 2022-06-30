@@ -44,7 +44,7 @@
 }
 
 .slogan{
-    font-family: 'Noto Serif Display', serif;
+    font-family: var(--font-family);
     font-size: var(--font-size-content-small);
     letter-spacing: 16px;
     padding-left: 150px;
@@ -77,16 +77,14 @@
 
 .temp-header-img{
     width: 20vw;
-    height: 30vw;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.5);
 }
 
 .quote{
     font-size: var(--font-size-sub-title);
     margin-left: 150px;
     letter-spacing: 10px;
-    font-family: 'Noto Serif Display', serif;
-    font-weight: 600;
+    font-family: var(--font-family);
+    font-weight: 500;
     line-height: 120px;
 }
 

@@ -5,7 +5,7 @@ import fbicon from '../../assets/facebook.svg';
 import insicon from '../../assets/instagram.svg';
 import tripicon from '../../assets/tripadvisor.svg';
 
-const ContactUs = () => (
+const ContactUs = (lang) => (
     <div className="contact-boundary" id="contact-us">
         <div className="social-media-icon">
             <a href="www.facebook.com"><img src={fbicon} height="50px"></img></a>

@@ -54,7 +54,7 @@
     cursor: pointer;
     margin: 0 4rem;
     font-size: var(--font-size-content-medium);
-    font-family: 'BenchNine', sans-serif;
+    font-family: var(--font-family);
 }
 
 .navbar-option:hover{

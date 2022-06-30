@@ -22,7 +22,7 @@
     justify-self: center;
     font-family: sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 25px;
 }
 
@@ -39,7 +39,7 @@
     font-weight: lighter;
 }
 
-@media(max-width: 1690px){
+/* @media(max-width: 1690px){
     .contact-boundary{ 
         height: 360px;
     }
@@ -116,4 +116,4 @@
     .copyright{
         font-size: 9px;
     }
-}
+} */

@@ -1,14 +1,24 @@
 body{
+    background-image: url("../../assets/header.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
     font-size: 20px;
 }
 
+.container{
+    margin: 9% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .login-form {
-    margin: auto;
-    padding: 100px 50px;
+    padding: 6% 4%;
     width: 30%;
     display: flex;
-    box-shadow: 0px 30px 60px -10px #383838;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
+
 
 input{
     width: 95%;
@@ -45,4 +55,68 @@ button{
     display: block;
     border-radius: 10px;
     text-align: center;
+}
+
+a.logo{
+    display: block;
+}
+
+div.__logo > span{
+    font-size: var(--font-size-title);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFBA0A;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 18px;
+    }
+
+    .container{
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .login-form{
+        margin: auto;
+        padding-bottom: 5px;
+        width: 50%;
+        height: 240px;
+    }
+
+    .logo{
+        background-color: rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+        font-size: 40px;
+        margin: 10px auto;
+    }
+
+    .__logo {
+        border: none;
+    }
+
+    input{
+        margin: 5px;
+        width: 90%;
+    }
+
+    .check-box > input{
+        width: 14px;
+        height: 14px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 7px 50px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    button{
+        font-size: 13px;
+        padding: 6px 45px;
+    }
 }

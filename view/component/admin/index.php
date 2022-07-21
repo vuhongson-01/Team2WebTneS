@@ -9,9 +9,10 @@
             </div>
             <div class="admin-state">
                 <div class="table-map">
-                    <img src="./view/asset/map.jpg" width="100%"/>
+                    <?php include "./view/component/admin/map.php";?>
                 </div>
                 <div class="table-process">
+                    <?php include "./view/component/admin/table_process.php";?>
                 </div>
             </div>
         </div>    

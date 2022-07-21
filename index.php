@@ -4,6 +4,7 @@
 ?> 
 <html>
     <head>
+        <link rel="icon" type="image/x-icon" href="./view/asset/favicon.ico">
         <link rel="stylesheet" href="./view/style/header.css" />
         <link rel="stylesheet" href="./view/style/navbar.css" />
         <link rel="stylesheet" href="./view/style/movetop.css" />

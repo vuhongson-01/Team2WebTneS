@@ -2,7 +2,7 @@
     width: 100%;
 }
 .book-a-table .img{
-    background-image: url('../../assets/book-a-table-img.jpg');
+    background-image: url('/public/Asset/book-a-table-img.jpg');
     background-size: cover;
     background-position: bottom;
     box-shadow: inset 0px 0px 0px 50px #4E2816;

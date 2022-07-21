@@ -1,8 +1,13 @@
-import React from "react";
-
-import './BookATable.css';
-
-const BookATable = (lang) => (
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./CSS/bookATable.css">
+</head>
+<body>
     <div className="book-a-table" id="book-a-table">
         <div className="img">
         </div>
@@ -22,7 +27,7 @@ const BookATable = (lang) => (
                     <span className="h3">Quý khách đặt hàng vui lòng gọi đến số điện thoại:</span><br></br>
                     <span className="h1">+84 836 266 866</span><br></br>
                     <span className="h3">Hoặc để lại thông tin, nhân viên nhà hàng sẽ liên hệ sau vài phút:</span><br></br>
-                    <form method="POST">
+                    <form action="BookATable" method="POST">
                         <input type="text" name="get-name" id="get-name" placeholder="Họ và tên" />
                         <input type="text" name="get-phone-number" id="get-phone-number" placeholder="Số điện thoại" />
                         <input type="email" name="get-email" id="get-email" placeholder="Email"/>
@@ -36,6 +41,5 @@ const BookATable = (lang) => (
             </div>
         </div>
     </div>
-);
-
-export default BookATable;
+</body>
+</html>

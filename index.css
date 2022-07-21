@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+
+:root{
+    --font-color-1: #FFFBFF;
+    --font-color-2: #F1DABF;
+    --font-color-3: #151310;
+    --font-size-title: 140px;
+    --font-size-sub-title: 84px;
+    --font-size-content-large: 60px; 
+    --font-size-content-medium: 40px; 
+    --font-size-content-small: 26px; 
+    --font-size-content-mini: 22px; 
+    --height-size: 44vw;
+    --font-family: 'Jost', sans-serif;
+}
+
+.hsub0 {
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0,0,0,1), rgba(0, 0, 0, 0)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.menu-title{
+    color: var(--font-color-1);
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    font-size: var(--font-size-sub-title);
+    font-weight: 400;
+    width: 100%;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+@media (max-width: 1690px){
+    :root{
+        --font-size-title: 100px;
+        --font-size-sub-title: 56px;
+        --font-size-content-large: 48px; 
+        --font-size-content-medium: 26px; 
+        --font-size-content-small: 20px; 
+        --font-size-content-mini: 16px; 
+    }
+    .menu-title{
+        letter-spacing: 10px;
+    }
+
+}
+
+@media (max-width: 1124px){
+    :root{
+        --font-size-title: 64px;
+        --font-size-sub-title: 36px;
+        --font-size-content-large: 32px; 
+        --font-size-content-medium: 18px; 
+        --font-size-content-small: 16px; 
+        --font-size-content-mini: 12px; 
+    }
+    .menu-title{
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-width: 768px){
+    :root{
+        --font-size-title: 44px;
+        --font-size-sub-title: 20px;
+        --font-size-content-large: 20px; 
+        --font-size-content-medium: 16px; 
+        --font-size-content-small: 14px; 
+        --font-size-content-mini: 12px; 
+        --height-size: 50vw;
+    }
+    .menu-title{
+        letter-spacing: 4px;
+    }
+}
+
+@media (max-width: 600px){
+    :root{
+        --font-size-title: 20px;
+        --font-size-sub-title: 20px;
+        --font-size-content-large: 18px; 
+        --font-size-content-medium: 14px; 
+        --font-size-content-small: 13px; 
+        --font-size-content-mini: 12px; 
+        --height-size: 80vw;
+    }
+    .menu-title{
+        letter-spacing: 4px;
+    }
+}
+

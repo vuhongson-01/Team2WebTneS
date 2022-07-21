@@ -17,10 +17,14 @@
                 $guest_number = $_POST['get-number'];
                 $noti = $_POST['get-notification'];
 
+                echo $name;
+
                 $qr = "INSERT INTO `bookrequest`
                        (`Name`, `Sdt`, `Email`, `NumofSeat`, `Text`, `Status`)
                        VALUES ('".$name."', '".$sdt."', '".$email."', '".$guest_number."', '".$noti."', '1');";
-                mysqli_query($this->conn, $qr);
+                $result = mysqli_query($this->conn, $qr);
+
+                echo "<script type='text/javascript'>alert('Insert succesfull');</script>";
             }
         }
 

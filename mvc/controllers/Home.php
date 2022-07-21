@@ -1,10 +1,11 @@
 <?php
     class Home extends Controller
     {
-        function SayHi()
+        function HomePage()
         {
-            $teo = $this->model("SinhVienModel");
-            echo $teo->getSV();
+            $this->view("index");
+            $khach = $this->model("bookATableModel");
+            $khach->getBookInfo();
         }
 
         function SayHello()
@@ -21,13 +22,14 @@
 
         function BookATable()
         {
-            $this->view("bookATable",[]);
+            $this->view("reserve",[]);
             $khach = $this->model("bookATableModel");
             $khach->getBookInfo();
-            $this->view("bookATable",[]);
+            $this->view("reserve",[]);
         }
 
-        function printInfo(){
+        function printInfo()
+        {
             
         }
     }

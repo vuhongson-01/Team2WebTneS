@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./view/style/admin.css" />
+        <link rel="stylesheet" href="./view/style/map.css" />
     </head>
     <body>
         <div class="admin">

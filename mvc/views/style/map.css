@@ -1,0 +1,127 @@
+:root {
+    --map-width: 69vw;
+    --map-height: 85vw;
+    --line-height: 3vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 3fr 1fr 3fr 1fr 2fr 1fr 2fr 1fr 3fr 1fr 1fr;
+    width: var(--map-width);
+    height: var(--map-height);
+    background-image: url('../asset/map.jpg');
+    background-size: contain;
+    text-align: center;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 8fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 3fr;
+}
+
+.row4 {
+    display: grid;
+    grid-template-columns: 18fr 1fr 2fr;
+}
+
+.row6 {
+    display: grid;
+    grid-template-columns: 9fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+.row8 {
+    display: grid;
+    grid-template-columns: 9fr 1fr 2fr 1fr 2fr 1fr 5fr;
+}
+
+.row10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 3fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+.row12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 15fr;
+}
+
+.row14 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 6fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+.row16 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr 1fr 4fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+.row div,
+.row {
+    line-height: var(--line-height);
+}
+
+.tile {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: darkgray;
+    border-radius: 25px;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.status_ {
+    display: flex;
+}
+
+.status-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.late {
+    background-color: red;
+}
+
+.picked {
+    background-color: saddlebrown;
+}
+
+.done {
+    background-color: lime;
+}
+
+.empty {
+    background-color: darkgrey;
+}
+
+.set-table {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.popup {
+    width: 500px;
+    height: fit-content;
+    position: fixed;
+    min-height: 500px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px black;
+    border: 1px solid darkgray;
+}
+
+.xline {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.table-id {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}

@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+.admin-header{
+    width: 100%;
+    height: 60px;    
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logout-btn{
+    color: white;
+    line-height: 60px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-state{
+    width: 100%;
+    /* height: max-content; */
+    display: flex;
+    flex-direction: row;
+}
+
+.table-map{
+    width: 70%;
+    margin: 10px;
+}
+
+.table-process{
+    width: 30%;
+    background-color: rgb(46, 46, 46);
+}

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mvc/views/style/admin.css" />
     <link rel="stylesheet" href="./mvc/views/style/map.css" />
     <link rel="stylesheet" href="./mvc/views/style/table_process.css" />
@@ -24,7 +25,7 @@
                     <div class="status_">
                         <div class="status-color picked">
                         </div>
-                        <span> Đặt chỗ</span>
+                        <span>Đặt chỗ</span>
                     </div>
                     <div class="status_">
                         <div class="status-color done">

@@ -1,0 +1,40 @@
+.process-container {
+    background-color: rgb(36, 36, 36);
+    max-width: 32vw;
+    min-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-block-start: 0;
+    padding: 0;
+}
+
+.nav {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+    height: 30px;
+    align-content: center;
+    text-decoration: none;
+    width: 7vw;
+    display: inline;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+#count-reqs {
+    color: red;
+}
+
+i {
+    width: 25px;
+    cursor: pointer;
+}
